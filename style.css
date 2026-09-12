@@ -1,24 +1,15 @@
 :root {
     --op-bg: #0d1321;
-    /* main dark background — deep night sea */
     --op-bg-alt: #131b2e;
-    /* slightly lighter panel background */
     --op-navy: #16223b;
-    /* card/footer background */
     --op-red: #e0263f;
-    /* brighter red — needs to pop on dark bg */
     --op-red-dark: #b81f34;
     /* button hover */
     --op-gold: #f2c14e;
-    /* straw hat gold — brighter for dark bg contrast */
     --op-text-light: #f5f0e6;
-    /* primary text on dark background */
     --op-text-muted: #b8bdc9;
-    /* secondary/body text, softer than pure white */
     --op-gray-card: #1f2940;
-    /* testimonial card background */
     --op-border: #2a3550;
-    /* subtle borders/dividers */
 }
 
 html {
