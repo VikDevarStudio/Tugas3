@@ -1,6 +1,35 @@
+:root {
+    --op-bg: #0d1321;
+    /* main dark background — deep night sea */
+    --op-bg-alt: #131b2e;
+    /* slightly lighter panel background */
+    --op-navy: #16223b;
+    /* card/footer background */
+    --op-red: #e0263f;
+    /* brighter red — needs to pop on dark bg */
+    --op-red-dark: #b81f34;
+    /* button hover */
+    --op-gold: #f2c14e;
+    /* straw hat gold — brighter for dark bg contrast */
+    --op-text-light: #f5f0e6;
+    /* primary text on dark background */
+    --op-text-muted: #b8bdc9;
+    /* secondary/body text, softer than pure white */
+    --op-gray-card: #1f2940;
+    /* testimonial card background */
+    --op-border: #2a3550;
+    /* subtle borders/dividers */
+}
+
+html {
+    scroll-behavior: smooth;
+}   
+
 body {
     margin: 0;
     font-family: arial;
+    background-color: var(--op-bg);
+    color: var(--op-text-light);
 }
 
 #bungkus {
@@ -17,11 +46,39 @@ body {
 }
 
 #menu {
-    margin-top: 50px;
+    justify-content: flex-end;
+}
+
+#MainTitle {
+    flex: 1;
+    text-align: center;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 1px var(--op-text-muted);
+}
+
+#MainTitle a {
+    text-decoration: none;
+}
+
+.remove-link {
+    text-decoration: none;
+    color: var(--op-text-light);
+}
+.remove-link a{
+    text-decoration: none;
+    color: var(--op-text-light);
+}
+
+#one {
+    color: var(--op-red);
+}
+
+#piece {
+    color: var(--op-gold);
 }
 
 #menu ul {
-    margin: 0;
+    margin: -30px 0;
     padding: 0;
 }
 
@@ -36,17 +93,38 @@ body {
     text-decoration: none;
     font-weight: bold;
     padding: 30px 0;
+    color: var(--op-text-light);
+    border-bottom: 5px solid transparent;
+    transition: border-color 0.2s ease;
 }
 
 #menu ul li a:hover,
 #menu ul li a.active {
-    border-bottom: 5px solid;
+    border-color: var(--op-red);
+}
+
+#top-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: var(--op-bg);
 }
 
 #top {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    width: 1088px;
+    margin: 0 auto;
+    padding: 15px 0;
 }
+#logo,
+#menu {
+    flex: 1;
+    display: flex;
+}
+
 
 #banner {
     height: 406px;
@@ -74,4 +152,256 @@ body {
 
 #highlight .box img {
     width: 320px;
+}
+
+#information {
+    display: flex;
+    margin: 20px 0 0 0;
+    gap: 3rem;
+    scroll-margin-top: 147px;
+}
+
+#crewmate {
+    scroll-margin-top: 147px;
+}
+
+#mini-banner {
+    flex: 1;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#mini-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#info-title h1 {
+    color: var(--op-light);
+}
+
+#info-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#info-content p {
+    color: var(--op-text-muted);
+}
+
+hr.line {
+    margin-top: 20px;
+    border: none;
+    border-top: 2px solid var(--op-border);
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.template-title {
+    display: flex;
+    justify-content: center;
+}
+
+.template-title h2 {
+    color: var(--op-gold);
+}
+
+.item-flex-template {
+    display: flex;
+    width: 100%;
+    gap: 3rem;
+    justify-content: space-between;
+}
+
+.item-flex-template img {
+    width: 8rem;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#card-flex-gap {
+    gap: 1.5rem;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--op-gray-card);
+    align-items: center;
+    border-radius: 10px;
+    flex: 1;
+    color: var(--op-text-light);
+    border: 1px solid var(--op-border);
+}
+
+.profile-card .card-items p {
+    padding-bottom: 3rem;
+}
+
+#card-img {
+    padding: 2rem 0 0 0;
+}
+
+.card-items img {
+    border-radius: 50%;
+    width: 5.5rem;
+    height: 5.5rem;
+}
+
+.card-items p {
+    margin: 0;
+    padding: 0 3rem;
+    text-align: center;
+    color: var(--op-text-muted);
+}
+
+.profile-card .card-items h2 {
+    color: var(--op-gold);
+}
+
+#contact {
+    background-color: var(--op-red);
+    align-items: center;
+    margin: 20px 5rem 0 5rem;
+    border-radius: 10px;
+}
+
+#connect-subtitle p {
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px 0 0 0;
+}
+
+#connect {
+    padding: 0.5rem 7.5rem;
+    border: 1px solid var(--op-gold);
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 4px;
+    background-color: var(--op-bg-alt);
+    color: var(--op-text-light);
+}
+
+
+#connect-2 {
+    display: flex;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+#connect-2 button {
+    border: 1px solid var(--op-navy);
+    color: var(--op-navy);
+    border-radius: 5px;
+    padding: 0.7rem 2rem;
+    background-color: var(--op-gold);
+    margin: 5px 0 13px 0;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#connect-2 button:hover {
+    background-color: var(--op-red-dark);
+    color: var(--op-text-light);
+    border-color: var(--op-gold);
+}
+
+#footer-wrap {
+    margin: 20px 0 0 0;
+    background-color: var(--op-navy);
+    color: var(--op-text-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--op-border);
+}
+
+#footer-left {
+    padding: 3rem;
+}
+
+#footer-left h3 {
+    color: var(--op-gold);
+}
+
+#footer-margin {
+    margin: 1rem;
+}
+
+.footer-content p {
+    margin: 0;
+    color: var(--op-text-muted);
+}
+
+#footer-right-wrap {
+    margin-right: 3rem;
+}
+
+#footer-right {
+    gap: 1rem;
+    margin: 0;
+    justify-content: right;
+}
+
+#footer-right img {
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+}
+
+.crew-item {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.crew-item img {
+    transition: transform 0.2s ease, filter 0.2s ease;
+    cursor: pointer;
+}
+
+.crew-item:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.crew-tooltip {
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--op-gray-card);
+    color: var(--op-text-light);
+    border: 1px solid var(--op-border);
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    text-align: center;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 10;
+}
+
+.crew-tooltip strong {
+    color: var(--op-gold);
+    display: block;
+    margin-bottom: 2px;
+}
+
+.crew-item:hover .crew-tooltip {
+    opacity: 1;
 }

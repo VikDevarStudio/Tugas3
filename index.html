@@ -4,40 +4,238 @@
 <head>
     <title>Vik's Page | Dashboard</title>
     <link rel="stylesheet" href="style.css" />
+
 </head>
 
 <body>
-    <div id="bungkus">
+    <div id="top-wrapper">
         <div id="top">
             <div id="logo">
                 <a href="#">
-                    <img src="images/web-development.png" />
+                    <img src="images/OnePiece.png" />
+                </a>
+            </div>
+            <div id="MainTitle">
+                <a href="#">
+                    <h1><span id="one">One</span> <span id="piece">Piece</span></h1>
                 </a>
             </div>
             <div id="menu">
                 <ul>
                     <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#information">About</a></li>
+                    <li><a href="#crewmate">Crewmates</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
+    </div>
+    <div id="bungkus">
         <div id="banner">
-            <img src="images/banner1.jpg" />
+            <img src="images/banner1.gif" />
         </div>
         <div id="highlight">
             <div class="box">
-                <img src="images/thor.jpg">
+                <img src="images/luffy.gif">
             </div>
             <div class="box">
-                <img src="images/wick.jpg" />
+                <img src="images/zoro.gif" />
             </div>
             <div class="box">
-                <img src="images/ironman.jpg" />
+                <img src="images/nami.gif" />
+            </div>
+        </div id="about">
+        <div id="information">
+            <div id="mini-banner">
+                <img src="images/banner2.gif" alt="Banner 2">
+            </div>
+            <div id="info-text">
+                <div id="info-title">
+                    <h1>Get to know Vik.</h1>
+                </div>
+                <div id="info-content">
+                    <p>Hello, im Vikesh! My friends from Indonesia often calls me "Kesh", but the overseas friend
+                        usually calls me "Vik". I'm a CompSci student at Universitas Multimedia Nusantara, currently at
+                        3rd Semester and taking several course. As you can see already, i am in love with One Piece.</p>
+                </div>
             </div>
         </div>
+        <hr class="line">
+        <div class="profile" id="crewmate">
+            <div class="template-title">
+                <a href="https://en.wikipedia.org/wiki/Straw_Hats" class="remove-link">
+                    <h2>Straw Hat's Crewmate</h2>
+                </a>
+            </div>
+            <div class="item-flex-template">
+                <a class="crew-item" href="https://en.wikipedia.org/wiki/Usopp" target="_blank">
+                    <img src="images/0.jpg" alt="Usopp">
+                    <span class="crew-tooltip">
+                        <strong>Usopp</strong>
+                        Sniper<br>500,000,000 Berry
+                    </span>
+                </a>
+                <a class="crew-item" href="https://en.wikipedia.org/wiki/Sanji_(One_Piece)" target="_blank">
+                    <img src="images/1.jpg" alt="Sanji">
+                    <span class="crew-tooltip">
+                        <strong>Sanji</strong>
+                        Cook<br>1,032,000,000 Berry
+                    </span>
+                </a>
+                <a class="crew-item" href="https://en.wikipedia.org/wiki/Nico_Robin" target="_blank">
+                    <img src="images/2.jpg" alt="Robin">
+                    <span class="crew-tooltip">
+                        <strong>Nico Robin</strong>
+                        Archaeologist<br>930,000,000 Berry
+                    </span>
+                </a>
+                <a class="crew-item" href="https://en.wikipedia.org/wiki/Franky_(One_Piece)" target="_blank">
+                    <img src="images/3.jpg" alt="Franky">
+                    <span class="crew-tooltip">
+                        <strong>Franky (Cutty Flam)</strong>
+                        Shipwright<br>394,000,000 Berry
+                    </span>
+                </a>
+                <a class="crew-item" href="https://en.wikipedia.org/wiki/Brook_(One_Piece)" target="_blank">
+                    <img src="images/4.jpg" alt="Brook">
+                    <span class="crew-tooltip">
+                        <strong>Brook</strong>
+                        Musician<br>383,000,000 Berry
+                    </span>
+                </a>
+                <a class="crew-item" href="https://en.wikipedia.org/wiki/Jimbei" target="_blank">
+                    <img src="images/5.jpg" alt="Jimbei">
+                    <span class="crew-tooltip">
+                        <strong>Jinbe</strong>
+                        Helmsman<br>1,100,000,000 Berry
+                    </span>
+                </a>
+            </div>
+        </div>
+        <hr class="line">
+        <div id="cards">
+            <div class="template-title">
+                <h2>Big Figures</h2>
+            </div>
+            <div class="item-flex-template" id="card-flex-gap">
+                <div class="profile-card">
+                    <div class="card-items" id="card-img">
+                        <a href="https://en.wikipedia.org/wiki/Monkey_D._Luffy" class="remove-link">
+                            <img src="images/6.jpg" alt="Profile 6">
+                        </a>
+                    </div>
+                    <div class="card-items">
+                        <a href="https://en.wikipedia.org/wiki/Monkey_D._Luffy" class="remove-link">
+                            <h2>Monkey D. Luffy</h2>
+                        </a>
+                    </div>
+                    <div class="card-items">
+                        <p>Captain of the Straw Hat Pirates and one of the Four Emperors, currently holds a massive
+                            3,000,000,000 Berry bounty after unlocking Gear 5 and defeating the Emperor Kaido.</p>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <div class="card-items" id="card-img">
+                        <a href="https://en.wikipedia.org/wiki/Roronoa_Zoro" class="remove-link">
+                            <img src="images/7.jpg" alt="Profile 7">
+                        </a>
+                    </div>
+                    <div class="card-items">
+                        <a href="https://en.wikipedia.org/wiki/Roronoa_Zoro" class="remove-link">
+                            <h2>Roronoa Zoro</h2>
+                        </a>
+                    </div>
+                    <div class="card-items">
+                        <p>Vice Captain of the Straw Hat Pirates and a master swordsman known as "Pirate Hunter",
+                            currently holds a massive 1,111,000,000 Berry bounty after defeating Kaido's top commander,
+                            King.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="profile" id="contact">
+            <div id="connect-subtitle">
+                <p>Get in touch with me to talk about One Piece!</p>
+            </div>
+            <div id="connect-0">
+                <form action="" id="contact-form">
+                    <div id="connect-1">
+                        <input name="connect" id="connect" placeholder="Enter your name here...">
+                    </div>
+                    <div id="connect-2">
+                        <button type="submit">Contact!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer id="footer-wrap">
+            <div class="profile" id="footer-left">
+                <div class="footer-margin">
+                    <a href="https://maps.app.goo.gl/D1hsx7W5amzvhz8T8" class="remove-link">
+                        <h3>Universitas Multimedia Nusantara</h3>
+                    </a>
+                </div>
+                <div class="footer-content">
+                    <a href="https://maps.app.goo.gl/mVyAv1J4rb7TkpHC6" class="remove-link">
+                        <p>Jl. Scientia Boulevard</p>
+                    </a>
+                </div>
+                <div class="footer-content">
+                    <a href="https://maps.app.goo.gl/gWnBnugeo18jkQq36" class="remove-link">
+                        <p>Kel. Curug Sangereng</p>
+                    </a>
+                </div>
+                <div class="footer-content">
+                    <a href="https://maps.app.goo.gl/PTG4YkW4RpD3mwBn7" class="remove-link">
+                        <p>Gading Serpong, Tangerang</p>
+                    </a>
+                </div>
+                <div class="footer-margin">
+                    <p class="remove-link">Phone: <a href="https://wa.me/622154220808?text=Halo">+62 21 54220808
+                            (UMN)</a></p>
+                </div>
+            </div>
+            <div class="profile" id="footer-right-wrap">
+                <div class="item-flex-template" id="footer-right">
+                    <a href="https://wa.me/6289652561418?text=Hello!"><img src="images/whatsapp.png" alt="whatsapp"></a>
+                    <a href="https://www.instagram.com/viceysh"><img src="images/instagram.png" alt="instagram"></a>
+                    <a href="https://discord.com/users/804931364674732072"><img src="images/discord.png"
+                            alt="discord"></a>
+                </div>
+                <div>
+                    <p>Copyright &copy; 2026 | All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
     </div>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById('connect').value.trim();
+
+            if (!name) {
+                alert('Please write your name first!');
+                return;
+            }
+
+            const message = `Hello, I'm ${name}. I came from your website about One Piece`;
+            const waLink = `https://wa.me/6289652561418?text=${encodeURIComponent(message)}`;
+
+            window.open(waLink, '_blank');
+        });
+    </script> <!--Reference by kak jesselyn yang dari week 2 kemarin-->
+
+    <script>
+        const navLinks = document.querySelectorAll('#menu ul li a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                navLinks.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script> <!-- AI Demi estetika-->
 </body>
 
 </html>
